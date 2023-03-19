@@ -1,14 +1,15 @@
 node default {
   include role::app_server
 }
+
 node 'puppetmaster.domain.name' {
   include profile::base
 }
 
 node /^web/ {
-  inlcude role::app_server
+  include role::app_server
 }
 
 node /^db/ {
-  inlcude role::db_server
+  include role::db_server
 }
