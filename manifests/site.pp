@@ -4,3 +4,11 @@ node default {
 node 'puppetmaster.domain.name' {
   include profile::base
 }
+
+node /^web/ {
+  inlcude role::app_server
+}
+
+node /^db/ {
+  inlcude role::db_server
+}
