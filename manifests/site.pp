@@ -1,7 +1,5 @@
 node default {
-  file { '/root/README':
-    ensure => file,
-    content => 'sample file for learning',
-    owner => 'root',
-  }
+}
+node 'puppetmaster.domain.name' {
+  include profile::base
 }
