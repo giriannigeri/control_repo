@@ -3,7 +3,7 @@ node default {
 }
 
 node 'puppetmaster.domain.name' {
-  include profile::base
+  include role::master_Server
 }
 
 node /^web/ {
