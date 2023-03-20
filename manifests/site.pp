@@ -1,3 +1,3 @@
 node default {
-  include role::ntp_server
+  include role::ntp_s
 }
