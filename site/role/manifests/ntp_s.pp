@@ -1,3 +1,3 @@
-class ntp_server {
+class ntp_s {
   include profile::ntp
 }
